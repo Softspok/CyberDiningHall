@@ -1,0 +1,84 @@
+/* 重置浏览器默认样式 */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* 顶部导航栏样式 */
+.top-nav {
+    position: fixed;
+    top: 0;
+    width: calc(100%);
+    height: 50px;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* 搜索栏样式 */
+.search-bar {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.search-bar input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+/* 主内容区样式 */
+.main-content {
+    padding: 60px 20px 20px 20px; /* 顶部导航栏高度为 padding-top */
+    height: calc(100vh - 60px); /* 减去顶部导航栏高度 */
+    overflow-y: auto;
+}
+
+.search-results div {
+    background-color: #f4f4f4;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.merchant-item {
+    display: block;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 0.3s ease; /* 添加平滑的过渡效果 */
+    text-decoration: none; /* 去除超链接的下划线 */
+    color: #333; /* 文本颜色 */
+}
+
+.merchant-item:hover {
+    background-color: #f5f5f5; /* 鼠标悬浮时的背景颜色改变 */
+    border-color: #ccc; /* 鼠标悬浮时边框颜色改变 */
+    transform: scale(1.02); /* 鼠标悬浮时轻微放大 */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* 鼠标悬浮时增加阴影的强度 */
+}

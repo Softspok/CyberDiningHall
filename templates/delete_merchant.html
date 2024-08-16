@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-删除商户</title>
+</head>
+<body>
+    <h1>{{ merchant.name }}</h1>
+    <p>{{ merchant.introduction }}</p>
+    <a href="/edit_merchant?m-account={{ merchant.account }}">Edit</a>
+    <a href="/" onclick="return confirm('确定要删除这个商户吗？')">Delete</a>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-商户菜单</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
+</head>
+<body>
+<h1 id="merchantName">商户名称</h1>
+<div class="search-bar">
+    <input type="text" placeholder="搜索菜品..." id="search">
+    <button onclick="search()">搜索</button>
+</div>
+<div id="menuContainer"></div> <!-- 菜单将在此容器中显示 -->
+<div class="footer">
+    <span id="totalPrice">总金额: ￥0</span>
+    <button class="button">提交订单</button>
+</div>
+
+<script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+</body>
+</html>

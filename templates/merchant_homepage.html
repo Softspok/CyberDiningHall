@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-商家主页</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/merchant_homepage.css') }}">
+</head>
+<body>
+<div class="sidebar" id="sidebar">
+    <div id="greeting">
+        <!-- 这里将显示问候语 -->
+    </div>
+    <a href="/merchant_profile?m-account={{ account }}">个人详细信息</a>
+    <a href="/manage_menu?m-account={{ account }}">管理菜单</a>
+    <a href="/merchant_orders?m-account={{ account }}">历史订单</a>
+    <a href="/merchant_comments?m-account={{ account }}">收到评论</a>
+    <a href="/merchant_reservations?m-account={{ account }}">收到预订</a>
+    <a href="/merchant_data?m-account={{ account }}">我的数据</a>
+</div>
+
+<div class="main-content">
+    <div class="order-todolist">
+        <!-- 待处理订单将在这里动态加载 -->
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/merchant_homepage.js') }}"></script>
+</body>
+</html>

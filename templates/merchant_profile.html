@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-商户个人详细信息</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+    <style>
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>merchant Detailed Information</h1>
+    <button onclick="edit()">编辑</button>
+    <div class="merchant-info">
+        <h2 id="merchant-name"></h2>
+        <p><strong>Account:</strong> <span id="merchant-account"></span></p>
+        <p><strong>Introduction:</strong> <span id="merchant-introduction"></span></p>
+        <p><strong>Address:</strong> <span id="merchant-address"></span></p>
+        <div id="merchant-pictures">
+            {#  在这插入图片  #}
+        </div>
+        <p><strong>Stars:</strong> <span id="merchant-stars"></span></p>
+        <p><strong>Collected Count:</strong> <span id="merchant-collectedCnt"></span></p>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/merchant_profile.js') }}"></script>
+</body>
+</html>

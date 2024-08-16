@@ -1,0 +1,65 @@
+body {
+    background-color: #f0f0f0;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+
+.dish-header {
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+#dishName {
+    font-size: 24px;
+    color: #000;
+}
+
+#collectButton {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#collectButton:hover {
+    background-color: #333;
+}
+
+#dishPictures {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#dishPictures img {
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+}
+
+p {
+    margin: 10px 20px;
+    font-size: 16px;
+    word-wrap: break-word; /* 兼容较老的浏览器 */
+    overflow-wrap: break-word; /* 推荐使用，更现代的浏览器支持 */
+    white-space: normal; /* 确保空白处正常处理 */
+}
+
+ul#comment-list {
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+ul#comment-list li {
+    border-bottom: 1px solid #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+}

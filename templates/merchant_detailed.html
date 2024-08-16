@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-商户详情</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/merchant_detailed.css') }}">
+
+</head>
+<body>
+<div class="merchant-header">
+    <h1 id="merchantName">商户名称</h1>
+    <button id="collectButton">收藏</button>
+</div>
+<div id="merchantPictures">
+{#  在这插入图片  #}
+</div>
+<p id="merchantIntro">商户介绍</p>
+<p id="merchantStars">星级</p>
+<p id="merchantAddress">地址</p>
+<p id="merchantCollectedCnt">收藏次数</p>
+<button id="menuButton">查看菜单</button>
+<button id="reserveButton">预订</button>
+
+<script src="{{ url_for('static', filename='js/merchant_detailed.js') }}"></script>
+
+</body>
+</html>

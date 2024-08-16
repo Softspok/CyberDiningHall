@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-修改用户个人信息</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/edit_profile.css') }}">
+</head>
+<body>
+<h1>Edit Customer Information</h1>
+<form id="customerForm">
+    <label for="name">用户名称:</label>
+    <input type="text" name="name">
+    <label for="password">新密码:</label>
+    <input type="password" name="password">
+    <label for="gender">性别:</label>
+    <select name="gender">
+        <option value="">请选择性别</option>
+        <option value="male">男</option>
+        <option value="female">女</option>
+        <option value="other">其他</option>
+    </select>
+    <label for="age">年龄:</label>
+    <input type="number" name="age">
+    <label for="hometown">家乡:</label>
+    <input type="text" name="hometown">
+    <label for="major">专业:</label>
+    <input type="text" name="major">
+    <button id="submit">提交</button>
+</form>
+<script src="{{ url_for('static', filename='js/edit_customer_information.js') }}"></script>
+</body>
+</html>
+

@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.merchant-info {
+    margin-top: 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+p strong {
+    color: #333;
+}
+
+#merchant-pictures {
+    margin: 20px 0;
+}
+
+#merchant-pictures img {
+    width: 100%;
+    max-width: 400px; /* 根据实际需要调整图片大小 */
+    height: auto;
+    margin-right: 10px;
+}
+
+#tooltip {
+    display: none;          /* 默认不显示 */
+    position: absolute;     /* 绝对定位，便于移动 */
+    z-index: 10;            /* 确保它在其他元素之上 */
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    pointer-events: none;   /* 确保可以点击穿透工具提示 */
+}

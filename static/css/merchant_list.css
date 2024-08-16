@@ -1,0 +1,77 @@
+/* 主内容区域样式 */
+.main-content {
+    width: 90%;
+    margin: 20px auto;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 商户列表样式 */
+.merchant-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* 单个商户项的样式 */
+.merchant-item {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* 标题样式 */
+.merchant-item h3 {
+    color: #333;
+    margin: 0 0 10px 0;
+}
+
+/* 段落样式 */
+.merchant-item p {
+    font-size: 14px;
+    color: #666;
+    margin: 0 0 15px 0;
+}
+
+/* 按钮基本样式 */
+.merchant-item button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px; /* 按钮间距 */
+}
+
+/* 查看详情按钮样式 */
+.view-details {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.view-details:hover {
+    background-color: #45a049;
+}
+
+/* 编辑按钮样式 */
+.edit-merchant {
+    background-color: #008CBA;
+    color: white;
+}
+
+.edit-merchant:hover {
+    background-color: #007ba7;
+}
+
+/* 删除按钮样式 */
+.delete-merchant {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-merchant:hover {
+    background-color: #da190b;
+}

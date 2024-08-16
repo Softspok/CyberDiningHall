@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-登录</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+<div class="login-container">
+    <form id="loginForm">
+        <h1>赛博食堂</h1>
+        <div class="form-group">
+            <label for="username">账户:</label>
+            <input type="text" id="username" name="username" placeholder="请输入账户名">
+        </div>
+        <div class="form-group">
+            <label for="password">密码:</label>
+            <input type="password" id="password" name="password" placeholder="请输入密码">
+        </div>
+        <p class="tip">账户或密码不正确</p>
+        <div class="radio-group">
+            <label for="Customer"><input type="radio" id="Customer" name="role" value="customer" checked>我是学生/教职工</label>
+            <label for="Merchant"><input type="radio" id="Merchant" name="role" value="merchant">我是商户</label>
+            <label for="Administrator"><input type="radio" id="Administrator" name="role" value="administrator">我是管理员</label>
+        </div>
+        <button type="submit" class="button">登录</button>
+        <div class="register-link">
+            <a href="/signup">没有账户？立即注册 →</a>
+        </div>
+    </form>
+</div>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+</body>
+</html>

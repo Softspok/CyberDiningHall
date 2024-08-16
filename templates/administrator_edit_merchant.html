@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-编辑商户</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/edit_merchant_detailed.css') }}">
+</head>
+<body>
+    <h1>Edit {{ merchant.name }}</h1>
+    <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ merchant.name }}" required><br>
+        <label for="introduction">Introduction:</label>
+        <textarea id="introduction" name="introduction" required>{{ merchant.introduction }}</textarea><br>
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>

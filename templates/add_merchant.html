@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-添加商户</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/add.css') }}">
+</head>
+<body>
+<div class="signup-form">
+    <h2>Sign Up New Merchant</h2>
+    <form id="signupForm">
+        <label for="account">Account*:</label>
+        <input type="text" id="account" name="account" required><br><br>
+
+        <label for="name">Name*:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="password">Password*:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="introduction">Introduction:</label>
+        <textarea id="introduction" name="introduction" rows="4" cols="50"></textarea><br><br>
+
+        <label for="pictures">Pictures:</label>
+        <input type="text" id="pictures" name="pictures"><br><br>
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br><br>
+
+        <button type="submit">Create Merchant</button>
+    </form>
+    <div id="error-message" class="error-message"></div>
+</div>
+
+<script src="{{ url_for('static', filename='js/add_merchant.js') }}"></script>
+</body>
+</html>

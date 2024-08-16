@@ -1,0 +1,70 @@
+/* 基本样式重置和背景设置 */
+body {
+    font-family: Arial, sans-serif; /* 设置通用字体 */
+    background-color: #f2f2f2; /* 轻灰色背景 */
+    margin: 0;
+    padding: 20px;
+}
+
+/* 表单容器样式 */
+.signup-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 标题样式 */
+.signup-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* 标签样式 */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+/* 输入框和文本区域样式 */
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 97%;
+    padding: 8px;
+    margin-bottom: 15px; /* 与下一个元素的距离 */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* 文本区域特定样式 */
+textarea {
+    resize: none; /* 不允许调整文本区域大小 */
+}
+
+/* 提交按钮样式 */
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3; /* 按钮悬浮时的背景颜色 */
+}
+
+/* 错误消息样式 */
+.error-message {
+    color: #f44336; /* 红色，用于错误信息 */
+    text-align: center;
+    margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-我的收藏</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/my_items.css') }}">
+</head>
+<body>
+    <h1>我的收藏</h1>
+
+    <h2>Merchant Collection:</h2>
+    <ul id="merchant-list">
+        <!-- Merchant items will be populated dynamically -->
+    </ul>
+
+    <h2>Dish Collection:</h2>
+    <ul id="dish-list">
+        <!-- Dish items will be populated dynamically -->
+    </ul>
+
+    <script src="{{ url_for('static', filename='js/my_collects.js') }}"></script>
+
+</body>
+</html>

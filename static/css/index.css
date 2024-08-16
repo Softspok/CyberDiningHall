@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../image/NorthDiningHall.png'); /* 替换为实际图片路径 */
+    background-color: #ffffff; /* 在图片加载过程中显示的背景颜色 */
+    background-size: cover; /* 背景图片覆盖整个可视区域 */
+    background-position: center; /* 背景图片居中显示 */
+    background-repeat: no-repeat; /* 背景图片不重复 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color: rgba(187, 222, 251, 0.85);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-group label {
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.form-group input {
+    flex-grow: 1;
+}
+
+.tip {
+    display: none;
+    font-size: 8px;
+    color: red;
+}
+
+.radio-group {
+    display: flex;
+    flex-direction: column; /* 确保子元素在垂直方向排列 */
+    margin-bottom: 25px;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center; /* 垂直居中对齐 */
+    margin-bottom: 10px; /* 每组之间的间隔 */
+}
+
+.radio-group input[type="radio"] {
+    margin-right: 5px; /* 单选按钮和标签之间的间隔 */
+}
+
+.register-link {
+    text-align: center;
+    font-size: 12px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+button {
+    background-color: #2196f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}

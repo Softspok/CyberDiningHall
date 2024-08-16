@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-修改商户个人信息</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/edit_profile.css') }}">
+</head>
+<body>
+<h1>Edit Merchant Information</h1>
+<form id="merchantForm">
+    <label for="name">商户名称:</label>
+    <input type="text" id="name" name="name"><br>
+
+    <label for="password">密码:</label>
+    <input type="password" id="password" name="password"><br>
+
+    <label for="introduction">介绍:</label>
+    <textarea id="introduction" name="introduction"></textarea><br>
+
+    <label for="address">地址:</label>
+    <input type="text" id="address" name="address"><br>
+
+    <label for="imageUpload">上传图片:</label>
+    <input type="file" id="imageUpload" multiple><br>
+    <input type="hidden" id="picturesInput" name="pictures">
+
+    <button type="submit">提交</button>
+</form>
+<script src="{{ url_for('static', filename='js/edit_merchant_information.js') }}"></script>
+</body>
+</html>
+

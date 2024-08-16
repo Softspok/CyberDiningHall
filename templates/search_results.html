@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-搜索结果</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search_results.css') }}">
+</head>
+<body>
+<div class="top-nav">
+    <div class="search-bar">
+        <input type="text" placeholder="搜索商家..." id="search-input">
+        <button onclick="search()">搜索</button>
+    </div>
+    <div id="greeting"></div>
+</div>
+
+<div class="main-content">
+    <div class="search-results">
+        <!-- 搜索结果将在这里动态加载 -->
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/search_results.js') }}"></script>
+</body>
+</html>

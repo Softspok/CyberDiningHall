@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-菜品详情</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dish_detailed.css') }}">
+</head>
+<body>
+<div class="dish-header">
+    <h1 id="dishName">菜品名称</h1>
+    <button id="collectButton">收藏</button>
+</div>
+<div id="dishPictures">
+    {#  在这插入图片  #}
+</div>
+<p id="dishPrice">价格: </p>
+<p id="dishType">类别: </p>
+<p id="dishStars">评分: </p>
+<p id="dishDescription">描述: </p>
+<p id="dishIngredient">成分：</p>
+<p id="dishNutrition">营养信息：</p>
+<p id="dishAllergen">可能存在的过敏源：</p>
+<p id="dishVolume">销量: </p>
+<p id="dishCollectedCnt">收藏次数: </p>
+<p>历史价格: </p>
+<ul id="history-list">
+    <!-- Comments will be populated dynamically -->
+</ul>
+<p>相关评论</p>
+<ul id="comment-list">
+    <!-- Comments will be populated dynamically -->
+</ul>
+
+<script src="{{ url_for('static', filename='js/dish_detailed.js') }}"></script>
+
+</body>
+</html>

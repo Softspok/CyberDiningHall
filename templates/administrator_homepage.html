@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-管理员首页</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/administrator_homepage.css') }}">
+
+</head>
+<body>
+    <div class="header">
+        <h1>管理员后台</h1>
+    </div>
+    <div class="container">
+        <div class="section" id="merchants">
+            <h2>商家管理</h2>
+            <p>在这里您可以管理商家的信息。</p>
+            <a href="/merchant_list" class="button" >查看所有商家</a>
+            <a href="/add_merchant" class="button">添加新商家</a>
+        </div>
+        <div class="section" id="customers">
+            <h2>顾客管理</h2>
+            <p>在这里您可以管理顾客的信息。</p>
+            <a href="/customer_list" class="button">查看所有顾客</a>
+            <a href="/add_customer" class="button">添加新顾客</a>
+        </div>
+        <div class="section" id="features">
+            <h2>用户特征</h2>
+        </div>
+    </div>
+<script src="{{url_for('static', filename='js/administrator_homepage.js') }}"></script>
+</body>
+</html>

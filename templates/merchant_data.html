@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-商户数据</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/table.css') }}">
+</head>
+<body>
+<h1>我的数据</h1>
+<button onclick="showDishes()">菜品数据</button>
+<button onclick="showCustomers()">忠实粉丝</button>
+<table id="dishesTable">
+    <thead>
+    <tr>
+        <th>dish_id</th>
+        <th>dish_name</th>
+        <th>stars</th>
+        <th>volume</th>
+        <th>most_interested_customer</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- 表格数据将从这里填充 -->
+    </tbody>
+</table>
+<table id="customersTable" style="display:none;">
+    <thead>
+    <tr>
+        <th>customer_name</th>
+        <th>purchase_distribution</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- 客户购买分布数据将从这里填充 -->
+    </tbody>
+</table>
+<script src="{{ url_for('static', filename='js/merchant_data.js') }}"></script>
+</body>
+</html>

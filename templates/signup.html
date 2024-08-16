@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-注册</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+</head>
+<body>
+<div class="container">
+    <h1>注册</h1>
+    <div class="radio-group">
+        <label><input type="radio" name="role" value="customer" checked>我是学生/教职工</label>
+        <label><input type="radio" name="role" value="merchant">我是商户</label>
+    </div>
+    <form id="customerForm" class="form active"> <!-- 默认显示客户表单 -->
+        <input type="text" name="account" placeholder="账号*" required>
+        <input type="text" name="name" placeholder="姓名*" required>
+        <input type="password" name="password" placeholder="密码*" required>
+        <select name="gender" required>
+            <option value="">请选择性别*</option>
+            <option value="male">男</option>
+            <option value="female">女</option>
+            <option value="other">其他</option>
+        </select>
+        <input type="number" name="age" placeholder="年龄">
+        <input type="text" name="hometown" placeholder="家乡">
+        <input type="text" name="major" placeholder="专业">
+        <button type="submit">注册</button>
+    </form>
+    <form id="merchantForm" class="form"> <!-- 初始隐藏商户表单 -->
+        <input type="text" name="account" placeholder="账号*" required>
+        <input type="text" name="name" placeholder="姓名*" required>
+        <input type="password" name="password" placeholder="密码*" required>
+        <input type="text" name="introduction" placeholder="介绍">
+        <input type="text" name="address" placeholder="地址">
+        <button type="submit">注册</button>
+    </form>
+    <div id="message"></div>
+</div>
+<script src="{{ url_for('static', filename='js/signup.js') }}"></script>
+</body>
+</html>

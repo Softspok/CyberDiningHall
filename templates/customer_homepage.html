@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-顾客主页</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/customer_homepage.css') }}">
+</head>
+<body>
+<div class="top-nav">
+    <div class="search-bar">
+        <input type="text" placeholder="搜索商家..." id="search-input">
+        <button onclick="search()">搜索</button>
+    </div>
+    <div id="greeting">
+        <!-- 这里将显示问候语 -->
+    </div>
+</div>
+<div class="sidebar" id="sidebar">
+    <a href="/customer_profile?c-account={{ account }}">个人详细信息</a>
+    <a href="/my_collects?c-account={{ account }}">收藏列表</a>
+    <a href="/my_messages?c-account={{ account }}">消息列表</a>
+    <a href="/my_orders?c-account={{ account }}">历史订单</a>
+    <a href="/my_comments?c-account={{ account }}">我的评论</a>
+    <a href="/my_reservations?c-account={{ account }}">我的预订</a>
+</div>
+
+<div class="main-content">
+    <div class="merchant-list">
+        <!-- 商家信息将在这里动态加载 -->
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/customer_homepage.js') }}"></script>
+</body>
+</html>

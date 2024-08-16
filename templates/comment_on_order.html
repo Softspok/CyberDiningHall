@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-写评论</title>
+</head>
+<body>
+<h2>订单详情</h2>
+<p id="merchantName">商户名称</p>
+<ul id="dishesList"></ul>
+<input type="file" id="imageUpload" multiple>
+<input type="hidden" id="picturesInput">
+<textarea id="orderComment" placeholder="写下您对整个订单的评价..."></textarea>
+<button onclick="submitComment()">提交评论</button>
+<script src="{{ url_for('static', filename='js/comment_on_order.js') }}"></script>
+
+</body>
+</html>

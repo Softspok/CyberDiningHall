@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-编辑菜单</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}">
+</head>
+<body>
+<h1 id="merchantName">商户名称</h1>
+<div class="search-bar">
+    <input type="text" placeholder="搜索菜品..." id="search">
+    <button onclick="search()">搜索</button>
+</div>
+<div id="menuContainer"></div> <!-- 菜单将在此容器中显示 -->
+
+<!-- 增加菜品表单 -->
+<h2>添加新菜品</h2>
+<form id="newDishForm">
+    <label for="dish_name">菜品名称:</label>
+    <input type="text" id="dish_name" name="dish_name" required><br>
+    <label for="dish_price">价格:</label>
+    <input type="number" id="dish_price" name="dish_price" step="0.01" required><br>
+    <label for="dish_description">描述:</label>
+    <textarea id="dish_description" name="dish_description" required></textarea><br>
+    <input type="file" id="imageUpload" multiple>
+    <label for="type">类别:</label>
+    <input type="text" id="type" name="type"><br>
+    <button type="submit">添加菜品</button>
+</form>
+
+<div class="footer">
+</div>
+
+<script src="{{ url_for('static', filename='js/manage_menu.js') }}"></script>
+</body>
+</html>

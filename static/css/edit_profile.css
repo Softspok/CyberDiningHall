@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif; /* 设置字体 */
+    background-color: #f4f4f4; /* 背景色 */
+    padding: 20px; /* 页面内边距 */
+}
+
+h1 {
+    color: #333; /* 标题颜色 */
+}
+
+form {
+    background: white; /* 表单背景色 */
+    padding: 20px; /* 表单内边距 */
+    border-radius: 8px; /* 边框圆角 */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* 阴影效果 */
+    margin: 20px auto; /* 居中显示 */
+}
+
+label {
+    font-weight: bold; /* 字体加粗 */
+    margin-top: 10px; /* 上边距 */
+    display: block; /* 使标签独占一行 */
+}
+
+input[type="text"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    width: 98%; /* 宽度 */
+    padding: 8px; /* 内边距 */
+    margin-top: 5px; /* 上边距 */
+    border: 1px solid #ccc; /* 边框 */
+    border-radius: 4px; /* 边框圆角 */
+}
+
+textarea {
+    height: 100px; /* 文本区域高度 */
+    resize: vertical; /* 允许垂直调整大小 */
+}
+
+button {
+    background-color: #007BFF; /* 背景色 */
+    color: white; /* 字体颜色 */
+    padding: 10px 15px; /* 内边距 */
+    border: none; /* 无边框 */
+    border-radius: 4px; /* 边框圆角 */
+    cursor: pointer; /* 鼠标样式 */
+    margin-top: 20px; /* 上边距 */
+}
+
+button:hover {
+    background-color: #0056b3; /* 鼠标悬停时的背景色 */
+}
+
+input[type="submit"] {
+    width: auto; /* 自动宽度 */
+    padding: 10px 20px; /* 内边距 */
+}

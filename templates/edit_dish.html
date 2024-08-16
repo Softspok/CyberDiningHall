@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赛博食堂-编辑菜品</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/edit_dish.css') }}">
+</head>
+<body>
+<div class="dish-header">
+    <h1 id="dishName">菜品名称</h1>
+</div>
+<div id="dishPictures">
+    <!-- 在这插入图片 -->
+</div>
+<p id="editPictures"></p>
+<p id="dishPrice">价格: </p>
+<p id="dishType">类别: </p>
+<p id="dishStars">评分: </p>
+<p id="dishDescription">描述: </p>
+<p id="dishVolume">销量: </p>
+<p id="dishCollectedCnt">收藏次数: </p>
+<p>历史价格: </p>
+<ul id="history-list">
+    <!-- Comments will be populated dynamically -->
+</ul>
+<p id="dishNutrition">营养</p>
+<p id="dishIngredients">成分</p>
+<p id="dishAllergens">过敏原</p>
+
+<!-- 编辑、保存、取消按钮 -->
+<button id="editButton">编辑</button>
+<button id="deleteButton">删除菜品</button>
+<button id="saveButton" style="display:none;">保存</button>
+<button id="cancelButton" style="display:none;">取消</button>
+
+
+
+<script src="{{ url_for('static', filename='js/edit_dish.js') }}"></script>
+
+</body>
+</html>

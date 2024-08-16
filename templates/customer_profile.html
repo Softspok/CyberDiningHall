@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>赛博食堂-用户个人详细信息</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/profile.css') }}">
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Customer Detailed Information</h1>
+        <button onclick="edit()">编辑</button>
+        <div class="customer-info">
+            <h2 id="customer-name"></h2>
+            <p><strong>Account:</strong> <span id="customer-account"></span></p>
+            <p><strong>Gender:</strong> <span id="customer-gender"></span></p>
+            <p><strong>Age:</strong> <span id="customer-age"></span></p>
+            <p><strong>Hometown:</strong> <span id="customer-hometown"></span></p>
+            <p><strong>Major:</strong> <span id="customer-major"></span></p>
+        </div>
+        <div id="heatmapContainer" style="width: 100%; overflow-x: auto;">
+            <p><strong>Activity:</strong></p>
+            <div id="tooltip"></div>
+            <div id="heatmap"></div>
+            <div id="weekly-trend"></div>
+            <div id="monthly-trend"></div>
+            <div id="hourly-trend"></div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/customer_profile.js') }}"></script>
+</body>
+</html>
